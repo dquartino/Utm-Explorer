@@ -1,0 +1,35 @@
+{
+    "name" :"Utm Explorer",
+    "version" :"1.0",
+    "description" :"Show all utms in links",
+    "permissions": ["activeTab", "declarativeContent"],
+    "icons": { "16": "images/icon16.png",
+      "48": "images/icon48.png",
+     "128": "images/icon128.png" },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+      "page_action": {
+        "default_icon": {               
+          "16": "images/icon16d.png",
+          "24": "images/icon24.png",    
+          "32": "images/icon32.png"         
+        },
+        "default_title": "Utm Explorer"
+      },
+      "content_scripts": [
+        {             
+          "matches": ["http://admin.digital-metric.com/campaigns/campaign/configs/offers/visuals/statics/preview/*"],
+          "css": ["core.css"],
+          "js": ["core.js"],
+          "run_at": "document_end",
+          "all_frames": false
+        }
+    ],
+    "web_accessible_resources": [
+      "images/loupe.svg"
+    ],
+      "manifest_version" : 2
+    }
+    
