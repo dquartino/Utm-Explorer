@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto|Sunflower:300");
+
+.crx_mouse_visited {
+  outline: 2px solid #0084ff !important;
+  opacity: 0.4;
+  display: block;
+  border-radius: 0.25em;
+  overflow: hidden;
+}
+
+.utminfo {
+  position: fixed;
+  background-color: #fff;
+  left: 1em;
+  top: 1em;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.25em;
+  box-shadow: 0px 0px 10px #bbbbbb;
+  opacity: 0;
+  transition: all 0.5s ease;
+  transition-delay: 1.5s;
+  overflow: hidden !important;
+}
+
+.show-info {
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+
+.utminfo > h1 {
+  font-family: "Sunflower", sans-serif;
+  background-image: linear-gradient(
+    to right bottom,
+    #0084ff,
+    #007dfc,
+    #0077f9,
+    #0070f6,
+    #0069f2
+  );
+  text-transform: uppercase;
+  font-weight: 400;
+  border: 1px solid #0084ff;
+  color: #fff;
+  padding: 1em 1em 1em 3.75em;
+  margin: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  position: relative;
+}
+
+.utminfo > h1 > .big {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.svg {
+  position: absolute;
+  left: -1em;
+  top: 0.35em;
+  width: 3.75em;
+}
+
+.container {
+  width: 100%;
+  border-style: solid;
+  border-color: #bbbbbb;
+  border-width: 0 1px 1px 1px;
+  border-bottom-left-radius: 0.25em;
+  border-bottom-right-radius: 0.25em;
+  box-sizing: border-box;
+}
+
+.line,
+.gapfixer .line {
+  padding: 0.8em 1.2em !important;
+  border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.line:last-child {
+  border: 0;
+}
+
+.utm {
+  font-size: 14px;
+  color: #0084ff;
+  font-weight: bold;
+  display: block;
+}
+
+.value {
+  font-size: 18px;
+  color: #8f8f8f;
+  display: block;
+}
